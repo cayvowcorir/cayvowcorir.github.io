@@ -123,7 +123,7 @@ app.Routers = app.Routers || {},
                         app.loadView(new app.Views.partech);
                         break;
                     case "the-whole":
-                        app.loadView(new app.Views.theWhole);
+                        app.loadView(new app.Views.kiangunyi);
                         break;
                     case "100ansdetour":
                         app.loadView(new app.Views._100ansDeTour);
@@ -169,47 +169,47 @@ app.Views = app.Views || {},
             setProjectsSize: function() {
                 var e = this.homeProjectsContainer.find(this.homeProjectClass),
                     t = e.length;
-                this.homeProjectsContainer.css("width", this.windowWidth * t + "px"), e.css("width", this.windowWidth + "px"), e.css("height", this.windowHeight + "px"), $("#theWholePlanet").css({
+                this.homeProjectsContainer.css("width", this.windowWidth * t + "px"), e.css("width", this.windowWidth + "px"), e.css("height", this.windowHeight + "px"), $("#kiangunyiPlanet").css({
                     height: this.windowHeight / 4.5 + "px",
                     width: this.windowHeight / 4.5 + "px",
                     marginLeft: -(this.windowHeight / 4.5) / 2 + "px",
                     marginTop: -(this.windowHeight / 4.5 / 2 - 40) + "px"
-                }), $("#theWholeSolar").css({
+                }), $("#kiangunyiSolar").css({
                     height: this.windowHeight / 1.38 + "px",
                     width: this.windowHeight / 1.38 + "px",
                     marginLeft: -(this.windowHeight / 1.38) / 2 + "px",
                     marginTop: -(this.windowHeight / 1.38 / 2 - 40) + "px"
-                }), $("#theWholeFbPlanet").css({
+                }), $("#kiangunyiFbPlanet").css({
                     height: this.windowHeight / 1.38 + "px",
                     width: this.windowHeight / 1.38 + "px",
                     marginLeft: -(this.windowHeight / 1.38) / 2 + "px",
                     marginTop: -(this.windowHeight / 1.38 / 2 - 40) + "px"
-                }), $("#theWholeTwPlanet").css({
+                }), $("#kiangunyiTwPlanet").css({
                     height: this.windowHeight / 1.38 + "px",
                     width: this.windowHeight / 1.38 + "px",
                     marginLeft: -(this.windowHeight / 1.38) / 2 + "px",
                     marginTop: -(this.windowHeight / 1.38 / 2 - 40) + "px"
-                }), $("#theWholeLfPlanet").css({
+                }), $("#kiangunyiLfPlanet").css({
                     height: this.windowHeight / 1.38 + "px",
                     width: this.windowHeight / 1.38 + "px",
                     marginLeft: -(this.windowHeight / 1.38) / 2 + "px",
                     marginTop: -(this.windowHeight / 1.38 / 2 - 40) + "px"
-                }), $("#theWholeScPlanet").css({
+                }), $("#kiangunyiScPlanet").css({
                     height: this.windowHeight / 1.38 + "px",
                     width: this.windowHeight / 1.38 + "px",
                     marginLeft: -(this.windowHeight / 1.38) / 2 + "px",
                     marginTop: -(this.windowHeight / 1.38 / 2 - 40) + "px"
-                }), $("#theWholeRssPlanet").css({
+                }), $("#kiangunyiRssPlanet").css({
                     height: this.windowHeight / 1.38 + "px",
                     width: this.windowHeight / 1.38 + "px",
                     marginLeft: -(this.windowHeight / 1.38) / 2 + "px",
                     marginTop: -(this.windowHeight / 1.38 / 2 - 40) + "px"
-                }), $("#theWholePinPlanet").css({
+                }), $("#kiangunyiPinPlanet").css({
                     height: this.windowHeight / 1.38 + "px",
                     width: this.windowHeight / 1.38 + "px",
                     marginLeft: -(this.windowHeight / 1.38) / 2 + "px",
                     marginTop: -(this.windowHeight / 1.38 / 2 - 40) + "px"
-                }), $("#theWhole-introduction").css({
+                }), $("#kiangunyi-introduction").css({
                     height: this.windowHeight + "px"
                 }), $("#tdf-introduction").css({
                     height: this.windowHeight + "px"
@@ -610,40 +610,40 @@ app.Views = app.Views || {},
 app.Views = app.Views || {},
     function() {
         "use strict";
-        app.Views.theWhole = Backbone.View.extend({
+        app.Views.kiangunyi = Backbone.View.extend({
             caseStudyContainer: $(".case-study-container"),
             caseStudyElem: $('section[data-case-study="the-whole"]'),
             title: "The Whole",
             name: "the-whole",
             anchorsPositions: [],
-            anchorsName: "theWhole",
+            anchorsName: "kiangunyi",
             initialize: function() {},
             initEnterProjectAction: function() {},
             enterProjectAnim: function() {
                 var e = this;
-                app.homeView.disableSlider(), $("#theWholeProject").addClass("closed"), $(".border").removeClass("close"), $(".border").addClass("open"), app.homeView.disableSlider(), $("#borderLeft").bind("webkitTransitionEnd msTransitionEnd oTransitionEnd transitionend", function() {
+                app.homeView.disableSlider(), $("#kiangunyiProject").addClass("closed"), $(".border").removeClass("close"), $(".border").addClass("open"), app.homeView.disableSlider(), $("#borderLeft").bind("webkitTransitionEnd msTransitionEnd oTransitionEnd transitionend", function() {
                     $(this).unbind("webkitTransitionEnd msTransitionEnd oTransitionEnd transitionend"), app.router.navigate("/" + e.name + "/case-study", {
                         trigger: !1
                     }), app.homeView.homeProjectsContainer.css("display", "none"), e.caseStudyElem.css({
                         display: "block"
                     }), setTimeout(function() {
-                        $("#theWhole-introduction").addClass("active"), clearTimeout(this)
+                        $("#kiangunyi-introduction").addClass("active"), clearTimeout(this)
                     }, 100), e.enterProject()
                 })
             },
             refreshAnchors: function() {
-                this.anchorsPositions = [$("#theWhole-introduction").offset().top - 1, $("#theWhole-concept").offset().top - 1, $("#theWhole-interface").offset().top - 1, $("#theWhole-element").offset().top - 1, $("#theWhole-madeWith").offset().top - 1]
+                this.anchorsPositions = [$("#kiangunyi-introduction").offset().top - 1, $("#kiangunyi-concept").offset().top - 1, $("#kiangunyi-interface").offset().top - 1, $("#kiangunyi-element").offset().top - 1, $("#kiangunyi-madeWith").offset().top - 1]
             },
             leaveProject: function() {
-                $("#theWholeProject").removeClass("closed"), $("#theWhole-introduction").removeClass("active"), app.homeView.homeProjectsContainer.css("display", "block"), $(".pagination.theWhole").removeClass("active"), this.caseStudyElem.css("display", "none"), $("body").addClass("userSelect")
+                $("#kiangunyiProject").removeClass("closed"), $("#kiangunyi-introduction").removeClass("active"), app.homeView.homeProjectsContainer.css("display", "block"), $(".pagination.kiangunyi").removeClass("active"), this.caseStudyElem.css("display", "none"), $("body").addClass("userSelect")
             },
             enterFromRouter: function() {
                 $(".border").removeClass("close"), $(".border").addClass("open"), this.caseStudyElem.css({
                     display: "block"
-                }), this.enterProject(), app.homeView.homeProjectsContainer.css("display", "none"), $("#theWhole-introduction").addClass("active")
+                }), this.enterProject(), app.homeView.homeProjectsContainer.css("display", "none"), $("#kiangunyi-introduction").addClass("active")
             },
             enterProject: function() {
-                $(".button-menu").removeClass("open"), $(".button-menu").addClass("close"), app.setCaseStudyActive(!0), $("body").removeClass("userSelect"), $(".pagination.theWhole").addClass("active"), app.initScrollAnims(), this.refreshAnchors(), app.refreshAnchors()
+                $(".button-menu").removeClass("open"), $(".button-menu").addClass("close"), app.setCaseStudyActive(!0), $("body").removeClass("userSelect"), $(".pagination.kiangunyi").addClass("active"), app.initScrollAnims(), this.refreshAnchors(), app.refreshAnchors()
             },
             getName: function() {
                 return this.name

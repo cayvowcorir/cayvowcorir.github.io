@@ -74,7 +74,7 @@ a {
     text-decoration: none
 }
 
-@font-face {
+/*@font-face {
     font-family: 'mostra-nuova-bold';
     src: url('font/mostra-nuova/mostra_nuova_bold-webfont.eot');
     src: url('font/mostra-nuova/mostra_nuova_bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_bold-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_bold-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_bold-webfont.svg#mostra_nuovabold') format('svg');
@@ -104,6 +104,52 @@ a {
     src: url('font/mostra-nuova/mostra_nuova_thin-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_thin-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_thin-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_thin-webfont.svg#mostra_nuovathin') format('svg');
     font-weight: normal;
     font-style: normal
+}*/
+
+
+
+
+
+@font-face {
+    font-family: 'mostratworegularregular';
+    src: url('mostratworegular-webfont.eot');
+    src: url('mostratworegular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('mostratworegular-webfont.woff2') format('woff2'),
+         url('mostratworegular-webfont.woff') format('woff'),
+         url('mostratworegular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'petit_formal_scriptregular';
+    src: url('petitformalscript-regular-webfont.eot');
+    src: url('petitformalscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('petitformalscript-regular-webfont.woff2') format('woff2'),
+         url('petitformalscript-regular-webfont.woff') format('woff'),
+         url('petitformalscript-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'blocusregular';
+    src: url('blocus-webfont.eot');
+    src: url('blocus-webfont.eot?#iefix') format('embedded-opentype'),
+         url('blocus-webfont.woff2') format('woff2'),
+         url('blocus-webfont.woff') format('woff'),
+         url('blocus-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 body,
@@ -427,11 +473,12 @@ html {
     right: 0;
     z-index: 99999;
     background: #229286;
-    text-align: center
+    text-align: center;
+    font-family: 'mostratworegularregular';
 }
 
 #loader #load {
-    background: url('../img/kevin-korir-logo.png') no-repeat center top;
+    background: url('kevin-korir-logo.png') no-repeat center top;
     background-size: 100%;
     width: 148px;
     height: 120px;
@@ -439,7 +486,7 @@ html {
     left: 50%;
     top: 50%;
     margin-left: -74px;
-    margin-top: -200px
+    margin-top: -200px;
 }
 
 #loader #load p {
@@ -1285,7 +1332,7 @@ section .page-content {
     margin-top: -103px
 }
 
-.pagination.theWhole {
+.pagination.kiangunyi {
     margin-top: -86px
 }
 
@@ -1612,7 +1659,9 @@ menu.openMenu {
     left: 0;
     right: 0;
     text-transform: uppercase;
-    letter-spacing: .1rem
+    letter-spacing: .1rem;
+    font-family: 'mostratworegularregular';
+    font-size: 40px;
 }
 
 #home header #header-content h1 {
@@ -2501,7 +2550,7 @@ menu.openMenu {
     }
 }
 
-#theWholeProject {
+#kiangunyiProject {
     background: #141414 url('../img/the-whole/the-whole-bg.jpg') no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2509,7 +2558,7 @@ menu.openMenu {
     background-size: cover
 }
 
-#theWholeProject #space-anim {
+#kiangunyiProject #space-anim {
     position: absolute;
     top: 0;
     left: 0;
@@ -2518,7 +2567,7 @@ menu.openMenu {
     overflow: hidden
 }
 
-#theWholeProject #space-anim #rocket {
+#kiangunyiProject #space-anim #rocket {
     position: absolute;
     width: 2.2%;
     -webkit-animation: rocket 30s 0 infinite linear;
@@ -2527,7 +2576,7 @@ menu.openMenu {
     animation: rocket 30s 0 infinite linear
 }
 
-#theWholeProject #space-anim #rocket img {
+#kiangunyiProject #space-anim #rocket img {
     display: block;
     width: 100%
 }
@@ -2688,7 +2737,7 @@ menu.openMenu {
     }
 }
 
-#theWholeProject #space-anim #astronaut {
+#kiangunyiProject #space-anim #astronaut {
     right: 35%;
     top: -10%;
     position: absolute;
@@ -2699,7 +2748,7 @@ menu.openMenu {
     animation: astronaut 50s 15s infinite linear
 }
 
-#theWholeProject #space-anim #astronaut img {
+#kiangunyiProject #space-anim #astronaut img {
     display: block;
     width: 100%
 }
@@ -2784,7 +2833,7 @@ menu.openMenu {
     }
 }
 
-#theWholeProject #space-anim #meteor1 {
+#kiangunyiProject #space-anim #meteor1 {
     position: absolute;
     width: 5%;
     top: -10%;
@@ -2795,12 +2844,12 @@ menu.openMenu {
     animation: meteor 150s 6s infinite linear
 }
 
-#theWholeProject #space-anim #meteor1 img {
+#kiangunyiProject #space-anim #meteor1 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor2 {
+#kiangunyiProject #space-anim #meteor2 {
     position: absolute;
     width: 2%;
     top: -10%;
@@ -2811,12 +2860,12 @@ menu.openMenu {
     animation: meteor 140s 23s infinite linear
 }
 
-#theWholeProject #space-anim #meteor2 img {
+#kiangunyiProject #space-anim #meteor2 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor3 {
+#kiangunyiProject #space-anim #meteor3 {
     position: absolute;
     width: 4%;
     top: -10%;
@@ -2827,12 +2876,12 @@ menu.openMenu {
     animation: meteor 160s 8s infinite linear
 }
 
-#theWholeProject #space-anim #meteor3 img {
+#kiangunyiProject #space-anim #meteor3 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor4 {
+#kiangunyiProject #space-anim #meteor4 {
     position: absolute;
     width: 6%;
     top: -10%;
@@ -2843,12 +2892,12 @@ menu.openMenu {
     animation: meteor 170s 35s infinite linear
 }
 
-#theWholeProject #space-anim #meteor4 img {
+#kiangunyiProject #space-anim #meteor4 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor5 {
+#kiangunyiProject #space-anim #meteor5 {
     position: absolute;
     width: 2%;
     top: -10%;
@@ -2859,12 +2908,12 @@ menu.openMenu {
     animation: meteor 155s 35s infinite linear
 }
 
-#theWholeProject #space-anim #meteor5 img {
+#kiangunyiProject #space-anim #meteor5 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor6 {
+#kiangunyiProject #space-anim #meteor6 {
     position: absolute;
     width: 4%;
     top: -10%;
@@ -2875,12 +2924,12 @@ menu.openMenu {
     animation: meteor 185s 12s infinite linear
 }
 
-#theWholeProject #space-anim #meteor6 img {
+#kiangunyiProject #space-anim #meteor6 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor7 {
+#kiangunyiProject #space-anim #meteor7 {
     position: absolute;
     width: 4%;
     top: -10%;
@@ -2891,12 +2940,12 @@ menu.openMenu {
     animation: meteor 210s 50s infinite linear
 }
 
-#theWholeProject #space-anim #meteor7 img {
+#kiangunyiProject #space-anim #meteor7 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor8 {
+#kiangunyiProject #space-anim #meteor8 {
     position: absolute;
     width: 3%;
     top: -10%;
@@ -2907,12 +2956,12 @@ menu.openMenu {
     animation: meteor 120s 0 infinite linear
 }
 
-#theWholeProject #space-anim #meteor8 img {
+#kiangunyiProject #space-anim #meteor8 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor9 {
+#kiangunyiProject #space-anim #meteor9 {
     position: absolute;
     width: 5%;
     top: -10%;
@@ -2923,12 +2972,12 @@ menu.openMenu {
     animation: meteor 130s 100s infinite linear
 }
 
-#theWholeProject #space-anim #meteor9 img {
+#kiangunyiProject #space-anim #meteor9 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor10 {
+#kiangunyiProject #space-anim #meteor10 {
     position: absolute;
     width: 2%;
     top: -10%;
@@ -2939,12 +2988,12 @@ menu.openMenu {
     animation: meteor 130s 90s infinite linear
 }
 
-#theWholeProject #space-anim #meteor10 img {
+#kiangunyiProject #space-anim #meteor10 img {
     display: block;
     width: 100%
 }
 
-#theWholeProject #space-anim #meteor11 {
+#kiangunyiProject #space-anim #meteor11 {
     position: absolute;
     width: 3%;
     top: -10%;
@@ -2955,7 +3004,7 @@ menu.openMenu {
     animation: meteor 130s 110s infinite linear
 }
 
-#theWholeProject #space-anim #meteor11 img {
+#kiangunyiProject #space-anim #meteor11 img {
     display: block;
     width: 100%
 }
@@ -3008,7 +3057,7 @@ menu.openMenu {
     }
 }
 
-#theWholeProject #theWholeSolarSystem {
+#kiangunyiProject #kiangunyiSolarSystem {
     position: absolute;
     top: 0;
     left: 0;
@@ -3017,18 +3066,18 @@ menu.openMenu {
     text-align: center
 }
 
-#theWholeProject #theWholeSolarSystem img {
+#kiangunyiProject #kiangunyiSolarSystem img {
     display: block
 }
 
-#theWholeProject #theWholeSolarSystem #theWholePlanet {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiPlanet {
     position: absolute;
     z-index: 99;
     left: 50%;
     top: 50%
 }
 
-#theWholeProject #theWholeSolarSystem #theWholePlanet a {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiPlanet a {
     position: relative;
     display: block;
     width: 100%;
@@ -3044,12 +3093,12 @@ menu.openMenu {
     animation: lightplanet 2s 0 infinite linear
 }
 
-#theWholeProject #theWholeSolarSystem #theWholePlanet a img:nth-of-type(1) {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiPlanet a img:nth-of-type(1) {
     width: 100%;
     height: 100%
 }
 
-#theWholeProject #theWholeSolarSystem #theWholePlanet a img:nth-of-type(2) {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiPlanet a img:nth-of-type(2) {
     position: absolute;
     margin: auto;
     width: 50%;
@@ -3158,19 +3207,19 @@ menu.openMenu {
     }
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeSolar {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiSolar {
     position: absolute;
     z-index: 1;
     left: 50%;
     top: 50%
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeSolar img {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiSolar img {
     width: 100%;
     height: 100%
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeFbPlanet {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiFbPlanet {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
@@ -3183,7 +3232,7 @@ menu.openMenu {
     height: auto
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeFbPlanet img {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiFbPlanet img {
     position: absolute;
     width: 20%;
     height: 20%;
@@ -3197,7 +3246,7 @@ menu.openMenu {
     animation: planetfb 30s 0 infinite linear
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeFbPlanet #lueurFB {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiFbPlanet #lueurFB {
     z-index: -1;
     box-shadow: 0 0 15px 5px rgba(60, 90, 156, 0.5);
     -moz-box-shadow: 0 0 15px 5px rgba(60, 90, 156, 0.5);
@@ -3219,7 +3268,7 @@ menu.openMenu {
     animation: planetfb 30s 0 infinite linear
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeTwPlanet {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiTwPlanet {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -3231,7 +3280,7 @@ menu.openMenu {
     top: 50%
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeTwPlanet img {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiTwPlanet img {
     box-shadow: 0 0 15px 5px rgba(37, 170, 226, 0.3);
     -moz-box-shadow: 0 0 15px 5px rgba(37, 170, 226, 0.3);
     -moz-border-radius: 100%;
@@ -3252,7 +3301,7 @@ menu.openMenu {
     animation: planettw 25s 0 infinite linear
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeLfPlanet {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiLfPlanet {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
@@ -3264,7 +3313,7 @@ menu.openMenu {
     top: 50%
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeLfPlanet img {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiLfPlanet img {
     box-shadow: 0 0 15px 5px rgba(210, 23, 23, 0.4);
     -moz-box-shadow: 0 0 15px 5px rgba(210, 23, 23, 0.4);
     -moz-border-radius: 100%;
@@ -3285,7 +3334,7 @@ menu.openMenu {
     animation: planetlfm 22s 0 infinite linear
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeScPlanet {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiScPlanet {
     -webkit-transform: rotate(225deg);
     -moz-transform: rotate(225deg);
     -o-transform: rotate(225deg);
@@ -3297,7 +3346,7 @@ menu.openMenu {
     top: 50%
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeScPlanet img {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiScPlanet img {
     position: absolute;
     width: 15%;
     height: 15%;
@@ -3311,7 +3360,7 @@ menu.openMenu {
     animation: planetsc 22s 0 infinite linear
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeScPlanet #lueurSc {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiScPlanet #lueurSc {
     z-index: -1;
     box-shadow: 0 0 15px 5px rgba(232, 77, 24, 0.5);
     -moz-box-shadow: 0 0 15px 5px rgba(232, 77, 24, 0.5);
@@ -3333,7 +3382,7 @@ menu.openMenu {
     animation: planetsc 22s 0 infinite linear
 }
 
-#theWholeProject #theWholeSolarSystem #theWholePinPlanet {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiPinPlanet {
     -webkit-transform: rotate(-180deg);
     -moz-transform: rotate(-180deg);
     -o-transform: rotate(-180deg);
@@ -3345,7 +3394,7 @@ menu.openMenu {
     top: 50%
 }
 
-#theWholeProject #theWholeSolarSystem #theWholePinPlanet img {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiPinPlanet img {
     box-shadow: 0 0 15px 5px rgba(150, 25, 30, 0.5);
     -moz-box-shadow: 0 0 15px 5px rgba(150, 25, 30, 0.5);
     -moz-border-radius: 100%;
@@ -3366,14 +3415,14 @@ menu.openMenu {
     animation: planetpin 20s 0 infinite linear
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeRssPlanet {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiRssPlanet {
     position: absolute;
     z-index: 6;
     left: 50%;
     top: 50%
 }
 
-#theWholeProject #theWholeSolarSystem #theWholeRssPlanet img {
+#kiangunyiProject #kiangunyiSolarSystem #kiangunyiRssPlanet img {
     box-shadow: 0 0 15px 5px rgba(244, 152, 25, 0.3);
     -moz-box-shadow: 0 0 15px 5px rgba(244, 152, 25, 0.3);
     -moz-border-radius: 100%;
@@ -5602,7 +5651,7 @@ menu.openMenu {
     }
 }
 
-#theWholeProject.closed #space-anim {
+#kiangunyiProject.closed #space-anim {
     -moz-transition: all 1.2s;
     -webkit-transition: all 1.2s;
     -ms-transition: all 1.2s;
@@ -5615,7 +5664,7 @@ menu.openMenu {
     transform: rotate(90deg) scale(0, 0)
 }
 
-#theWholeProject.closed #theWholeSolarSystem {
+#kiangunyiProject.closed #kiangunyiSolarSystem {
     -moz-transition: all 1.2s;
     -webkit-transition: all 1.2s;
     -ms-transition: all 1.2s;
@@ -5653,7 +5702,7 @@ menu.openMenu {
 }
 
 #socialCokeProject #socialCokeBgContent p {
-    font-family: 'Lavanderia-Regular';
+    font-family: 'blocusregular';
     font-size: 24px;
     font-size: 1.500rem;
     margin-top: 30px
@@ -6019,45 +6068,7 @@ menu.openMenu {
     color: #00c4ff
 }
 
-@font-face {
-    font-family: 'Conv_Gotham-Book';
-    src: url('font/Gotham/Gotham-Book.eot');
-    src: local('â˜º'), url('font/Gotham/Gotham-Book.woff') format('woff'), url('font/Gotham/Gotham-Book.ttf') format('truetype'), url('font/Gotham/Gotham-Book.svg') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
 
-@font-face {
-    font-family: 'Conv_Gotham-Light';
-    src: url('font/Gotham/Gotham-Light.eot');
-    src: local('â˜º'), url('font/Gotham/Gotham-Light.woff') format('woff'), url('font/Gotham/Gotham-Light.ttf') format('truetype'), url('font/Gotham/Gotham-Light.svg') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Conv_Gotham-Thin';
-    src: url('font/Gotham/Gotham-Thin.eot');
-    src: local('â˜º'), url('font/Gotham/Gotham-Thin.woff') format('woff'), url('font/Gotham/Gotham-Thin.ttf') format('truetype'), url('font/Gotham/Gotham-Thin.svg') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Conv_Gotham-Medium';
-    src: url('font/Gotham/Gotham-Medium.eot');
-    src: local('â˜º'), url('font/Gotham/Gotham-Medium.woff') format('woff'), url('font/Gotham/Gotham-Medium.ttf') format('truetype'), url('font/Gotham/Gotham-Medium.svg') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'Conv_Gotham-Bold';
-    src: url('font/Gotham/Gotham-Bold.eot');
-    src: local('â˜º'), url('font/Gotham/Gotham-Bold.woff') format('woff'), url('font/Gotham/Gotham-Bold.ttf') format('truetype'), url('font/Gotham/Gotham-Bold.svg') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
 
 #partech {
     background: #000;
@@ -6949,7 +6960,7 @@ menu.openMenu {
 }
 
 @font-face {
-    font-family: 'Lavanderia-Regular';
+    font-family: 'blocusregular';
     src: url('font/lavanderia/lavanderiaregular.eot');
     src: url('font/lavanderia/lavanderiaregular.eot?#iefix') format('embedded-opentype'), url('font/lavanderia/lavanderiaregular.woff') format('woff'), url('font/lavanderia/lavanderiaregular.ttf') format('truetype'), url('font/lavanderia/lavanderiaregular.svg#lavanderiaregular') format('svg');
     font-weight: normal;
@@ -7003,7 +7014,7 @@ menu.openMenu {
     width: -o-calc(33.333333333333336%);
     width: calc(33.333333333333336%);
     display: inline-block;
-    font-family: 'Lavanderia-Regular';
+    font-family: 'blocusregular';
     font-size: 22px;
     font-size: 1.375rem
 }
@@ -7212,7 +7223,7 @@ menu.openMenu {
 }
 
 #socialCoke #socialCoke-context .page-content h2 {
-    font-family: 'Lavanderia-Regular';
+    font-family: 'blocusregular';
     text-align: center;
     color: #f0e2c7;
     font-size: 50px;
@@ -7384,7 +7395,7 @@ menu.openMenu {
 }
 
 #socialCoke #socialCoke-idea .page-content h2 {
-    font-family: 'Lavanderia-Regular';
+    font-family: 'blocusregular';
     text-align: center;
     font-size: 50px;
     font-size: 3.125rem
@@ -7517,7 +7528,7 @@ menu.openMenu {
 }
 
 #socialCoke #socialCoke-interest .page-content h2 {
-    font-family: 'Lavanderia-Regular';
+    font-family: 'blocusregular';
     text-align: center;
     font-size: 50px;
     font-size: 3.125rem;
@@ -7551,7 +7562,7 @@ menu.openMenu {
 }
 
 #socialCoke #socialCoke-universe .page-content h2 {
-    font-family: 'Lavanderia-Regular';
+    font-family: 'blocusregular';
     text-align: center;
     font-size: 50px;
     font-size: 3.125rem
@@ -7613,7 +7624,7 @@ menu.openMenu {
 }
 
 #socialCoke #socialCoke-bottle .page-content h2 {
-    font-family: 'Lavanderia-Regular';
+    font-family: 'blocusregular';
     text-align: center;
     font-size: 50px;
     font-size: 3.125rem;
@@ -7647,7 +7658,7 @@ menu.openMenu {
 }
 
 #socialCoke #socialCoke-madeWith .page-content h2 {
-    font-family: 'Lavanderia-Regular';
+    font-family: 'blocusregular';
     text-align: center;
     font-size: 50px;
     font-size: 3.125rem;
@@ -8310,7 +8321,7 @@ menu.openMenu {
     color: #f0e2c7;
     font-size: 55px;
     font-size: 3.438rem;
-    font-family: 'Lavanderia-Regular'
+    font-family: 'blocusregular'
 }
 
 #socialCoke footer p:nth-of-type(2) {
@@ -9840,12 +9851,12 @@ menu.openMenu {
     font-size: 1.125rem
 }
 
-#theWhole {
+#kiangunyi {
     color: #f9f9f9;
     font-family: 'Conv_Gotham-Light'
 }
 
-#theWhole #theWhole-bg {
+#kiangunyi #kiangunyi-bg {
     position: fixed;
     z-index: -1;
     top: 0;
@@ -9864,13 +9875,13 @@ menu.openMenu {
     transition: all .7s
 }
 
-#theWhole #theWhole-introduction {
+#kiangunyi #kiangunyi-introduction {
     position: relative;
     overflow: hidden;
     min-height: 705px
 }
 
-#theWhole #theWhole-introduction.active .page-content ul {
+#kiangunyi #kiangunyi-introduction.active .page-content ul {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     -moz-transform: scale3d(1, 1, 1);
@@ -9879,7 +9890,7 @@ menu.openMenu {
     transform: scale3d(1, 1, 1)
 }
 
-#theWhole #theWhole-introduction.active .page-content h1 {
+#kiangunyi #kiangunyi-introduction.active .page-content h1 {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     -moz-transform: scale3d(1, 1, 1);
@@ -9888,7 +9899,7 @@ menu.openMenu {
     transform: scale3d(1, 1, 1)
 }
 
-#theWhole #theWhole-introduction.active .page-content p {
+#kiangunyi #kiangunyi-introduction.active .page-content p {
     opacity: 1;
     -webkit-transform: scale3d(1, 1, 1);
     -moz-transform: scale3d(1, 1, 1);
@@ -9897,16 +9908,16 @@ menu.openMenu {
     transform: scale3d(1, 1, 1)
 }
 
-#theWhole #theWhole-introduction.active .page-content #theWhole-mb {
+#kiangunyi #kiangunyi-introduction.active .page-content #kiangunyi-mb {
     opacity: 1;
     bottom: 0
 }
 
-#theWhole #theWhole-introduction .page-content {
+#kiangunyi #kiangunyi-introduction .page-content {
     text-align: center
 }
 
-#theWhole #theWhole-introduction .page-content ul {
+#kiangunyi #kiangunyi-introduction .page-content ul {
     margin: 112px auto 0 auto;
     font-size: 16px;
     font-size: 1rem;
@@ -9923,7 +9934,7 @@ menu.openMenu {
     transform: scale3d(20, 20, 1)
 }
 
-#theWhole #theWhole-introduction .page-content ul li {
+#kiangunyi #kiangunyi-introduction .page-content ul li {
     width: -moz-calc(33.333333333333336%);
     width: -webkit-calc(33.333333333333336%);
     width: -ms-calc(33.333333333333336%);
@@ -9934,18 +9945,18 @@ menu.openMenu {
     vertical-align: top
 }
 
-.lt-ie9 #theWhole #theWhole-introduction .page-content ul li {
+.lt-ie9 #kiangunyi #kiangunyi-introduction .page-content ul li {
     display: inline;
     zoom: 1
 }
 
-#theWhole #theWhole-introduction .page-content ul li span {
+#kiangunyi #kiangunyi-introduction .page-content ul li span {
     display: block;
     text-transform: uppercase;
     font-family: 'Conv_Gotham-Book'
 }
 
-#theWhole #theWhole-introduction .page-content h1 {
+#kiangunyi #kiangunyi-introduction .page-content h1 {
     opacity: 0;
     width: 243px;
     margin: 90px auto 0 auto;
@@ -9966,16 +9977,16 @@ menu.openMenu {
     transform: scale3d(20, 20, 1)
 }
 
-#theWhole #theWhole-introduction .page-content h1 img {
+#kiangunyi #kiangunyi-introduction .page-content h1 img {
     display: block;
     width: 100%
 }
 
-#theWhole #theWhole-introduction .page-content h1 span {
+#kiangunyi #kiangunyi-introduction .page-content h1 span {
     display: none
 }
 
-#theWhole #theWhole-introduction .page-content p {
+#kiangunyi #kiangunyi-introduction .page-content p {
     color: #fff;
     font-size: 18px;
     font-size: 1.125rem;
@@ -10000,7 +10011,7 @@ menu.openMenu {
     transform: scale3d(20, 20, 1)
 }
 
-#theWhole #theWhole-introduction .page-content #theWhole-mb {
+#kiangunyi #kiangunyi-introduction .page-content #kiangunyi-mb {
     opacity: 0;
     position: absolute;
     bottom: -224px;
@@ -10021,12 +10032,12 @@ menu.openMenu {
     transition-delay: 1.6s
 }
 
-#theWhole #theWhole-concept {
+#kiangunyi #kiangunyi-concept {
     background: #050505;
     padding: 100px 0 100px 0
 }
 
-#theWhole #theWhole-concept .page-content h2 {
+#kiangunyi #kiangunyi-concept .page-content h2 {
     font-family: 'Conv_Gotham-Book';
     text-transform: uppercase;
     text-align: center;
@@ -10034,7 +10045,7 @@ menu.openMenu {
     font-size: 2rem
 }
 
-#theWhole #theWhole-concept .page-content h3 {
+#kiangunyi #kiangunyi-concept .page-content h3 {
     text-transform: uppercase;
     text-align: center;
     font-size: 16px;
@@ -10043,7 +10054,7 @@ menu.openMenu {
     color: #646464
 }
 
-#theWhole #theWhole-concept .page-content p {
+#kiangunyi #kiangunyi-concept .page-content p {
     margin-top: 40px;
     text-align: left;
     line-height: 1.5em;
@@ -10054,16 +10065,16 @@ menu.openMenu {
     width: 370px
 }
 
-.lt-ie9 #theWhole #theWhole-concept .page-content p {
+.lt-ie9 #kiangunyi #kiangunyi-concept .page-content p {
     display: inline;
     zoom: 1
 }
 
-#theWhole #theWhole-concept .page-content p:nth-of-type(1) {
+#kiangunyi #kiangunyi-concept .page-content p:nth-of-type(1) {
     margin-right: 210px
 }
 
-#theWhole #theWhole-concept .page-content img {
+#kiangunyi #kiangunyi-concept .page-content img {
     opacity: 0;
     display: block;
     margin: 60px auto 0 auto;
@@ -10074,30 +10085,30 @@ menu.openMenu {
     transition: all 1s
 }
 
-#theWhole #theWhole-concept.active {
+#kiangunyi #kiangunyi-concept.active {
     background: #050505;
     padding: 100px 0 100px 0
 }
 
-#theWhole #theWhole-concept.active .page-content img {
+#kiangunyi #kiangunyi-concept.active .page-content img {
     opacity: 1
 }
 
-#theWhole #theWhole-interface {
+#kiangunyi #kiangunyi-interface {
     background: #141414;
     padding: 112px 0 100px 0
 }
 
-#theWhole #theWhole-interface .page-content h2 {
+#kiangunyi #kiangunyi-interface .page-content h2 {
     font-family: 'Conv_Gotham-Book';
     text-transform: uppercase;
     text-align: center;
-    color: #fc1f2f;
+    color: #8d6e63;
     font-size: 20px;
     font-size: 1.250rem
 }
 
-#theWhole #theWhole-interface .page-content>p {
+#kiangunyi #kiangunyi-interface .page-content>p {
     text-align: center;
     line-height: 1.3em;
     font-size: 16px;
@@ -10106,12 +10117,12 @@ menu.openMenu {
     margin: 10px auto 40px auto
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content {
     position: relative;
     margin: 60px auto 40px auto
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content>img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content>img {
     display: block;
     width: 950px;
     -webkit-box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -10122,13 +10133,13 @@ menu.openMenu {
     box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3)
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul {
     margin-top: 80px;
     text-align: center;
     position: relative
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li {
     display: inline-block;
     width: -moz-calc(33.333333333333336%);
     width: -webkit-calc(33.333333333333336%);
@@ -10144,12 +10155,12 @@ menu.openMenu {
     transition: all 1s
 }
 
-.lt-ie9 #theWhole #theWhole-interface .page-content #theWhole-interface-content ul li {
+.lt-ie9 #kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li {
     display: inline;
     zoom: 1
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li img {
     display: block;
     width: 200px;
     height: auto;
@@ -10174,7 +10185,7 @@ menu.openMenu {
     box-sizing: border-box
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li h3 {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li h3 {
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;
@@ -10191,11 +10202,11 @@ menu.openMenu {
     letter-spacing: .1rem;
     font-size: 14px;
     font-size: .875rem;
-    color: #fc1f2f;
+    color: #8d6e63;
     font-family: 'Conv_Gotham-Book'
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li p {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li p {
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;
@@ -10214,12 +10225,12 @@ menu.openMenu {
     margin: auto
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(1) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li:nth-of-type(1) {
     position: relative;
     z-index: 10
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(1) img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li:nth-of-type(1) img {
     opacity: 0;
     -moz-transition: all 1.3s;
     -webkit-transition: all 1.3s;
@@ -10228,14 +10239,14 @@ menu.openMenu {
     transition: all 1.3s
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(2) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li:nth-of-type(2) {
     position: absolute;
     left: 50%;
     margin-left: -webkit-calc(-16.666666666666668%);
     top: 0
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(2) img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li:nth-of-type(2) img {
     opacity: 0;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -10249,14 +10260,14 @@ menu.openMenu {
     transition: all 1.3s
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(3) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li:nth-of-type(3) {
     position: absolute;
     right: 50%;
     margin-right: -webkit-calc(-16.666666666666668%);
     top: 0
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul li:nth-of-type(3) img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul li:nth-of-type(3) img {
     opacity: 0;
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
@@ -10270,20 +10281,20 @@ menu.openMenu {
     transition: all 1.3s
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu {
     position: relative
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img {
     display: block
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(1) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(1) {
     position: relative;
     z-index: 2
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(2) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(2) {
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;
@@ -10295,7 +10306,7 @@ menu.openMenu {
     right: -20px
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(3) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(3) {
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;
@@ -10308,7 +10319,7 @@ menu.openMenu {
     z-index: 99
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(4) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(4) {
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;
@@ -10321,7 +10332,7 @@ menu.openMenu {
     z-index: 99
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(5) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(5) {
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;
@@ -10334,7 +10345,7 @@ menu.openMenu {
     z-index: 99
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(6) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(6) {
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;
@@ -10347,7 +10358,7 @@ menu.openMenu {
     z-index: 99
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(7) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(7) {
     -moz-transition: all 1s;
     -webkit-transition: all 1s;
     -ms-transition: all 1s;
@@ -10360,16 +10371,16 @@ menu.openMenu {
     z-index: 99
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul.active li:nth-of-type(1) img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul.active li:nth-of-type(1) img {
     opacity: 1
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul.active li:nth-of-type(2) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul.active li:nth-of-type(2) {
     left: 0;
     margin: 0
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul.active li:nth-of-type(2) img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul.active li:nth-of-type(2) img {
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -10378,12 +10389,12 @@ menu.openMenu {
     transform: rotate(0deg)
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul.active li:nth-of-type(3) {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul.active li:nth-of-type(3) {
     right: 0;
     margin: 0
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul.active li:nth-of-type(3) img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul.active li:nth-of-type(3) img {
     opacity: 1;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -10392,148 +10403,61 @@ menu.openMenu {
     transform: rotate(0deg)
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul.active li h3 {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul.active li h3 {
     opacity: 1
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-interface-content ul.active li p {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-interface-content ul.active li p {
     opacity: 1
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu {
     position: relative
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img {
     display: block
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(2).active {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(2).active {
     opacity: 1;
     right: 0
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(3).active {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(3).active {
     opacity: 1;
     top: 920px
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(4).active {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(4).active {
     opacity: 1;
     top: 664px
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(5).active {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(5).active {
     opacity: 1;
     top: 213px
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(6).active {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(6).active {
     opacity: 1;
     top: 65px
 }
 
-#theWhole #theWhole-interface .page-content #theWhole-menu img:nth-of-type(7).active {
+#kiangunyi #kiangunyi-interface .page-content #kiangunyi-menu img:nth-of-type(7).active {
     opacity: 1;
     top: 20px
 }
 
-#theWhole #theWhole-element {
-    background: #141414 url('../img/the-whole/theWhole-patterns.jpg') repeat center center;
-    padding: 112px 0 100px 0
-}
 
-#theWhole #theWhole-element .page-content div {
-    display: inline-block;
-    vertical-align: top;
-    width: 235px;
-    margin-right: 7px
-}
-
-.lt-ie9 #theWhole #theWhole-element .page-content div {
-    display: inline;
-    zoom: 1
-}
-
-#theWhole #theWhole-element .page-content div h2 {
-    font-size: 32px;
-    font-size: 2rem;
-    font-family: 'Conv_Gotham-Book'
-}
-
-#theWhole #theWhole-element .page-content div h2 b {
-    display: block;
-    color: #fc1f2f
-}
-
-#theWhole #theWhole-element .page-content div h2:after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 1px;
-    background: #646464;
-    margin: 30px 0
-}
-
-#theWhole #theWhole-element .page-content div p {
-    line-height: 1.5em;
-    vertical-align: top;
-    display: inline-block;
-    font-size: 12px;
-    font-size: .75rem
-}
-
-.lt-ie9 #theWhole #theWhole-element .page-content div p {
-    display: inline;
-    zoom: 1
-}
-
-#theWhole #theWhole-element .page-content #element-img {
-    display: inline-block;
-    vertical-align: top
-}
-
-.lt-ie9 #theWhole #theWhole-element .page-content #element-img {
-    display: inline;
-    zoom: 1
-}
-
-#theWhole #theWhole-madeWith {
+#kiangunyi #kiangunyi-madeWith {
     background: #141414;
     padding: 112px 0 60px 0;
     position: relative;
     overflow: hidden
 }
 
-#theWhole #theWhole-madeWith .page-content #macbook-theWhole {
-    width: 875px;
-    position: relative;
-    margin: 0 auto 60px auto
-}
-
-#theWhole #theWhole-madeWith .page-content #macbook-theWhole img {
-    display: block;
-    margin: auto
-}
-
-#theWhole #theWhole-madeWith .page-content #macbook-theWhole img:nth-of-type(1) {
-    width: 100%
-}
-
-#theWhole #theWhole-madeWith .page-content #macbook-theWhole img:nth-of-type(2) {
-    -moz-transition: all 1.5s;
-    -webkit-transition: all 1.5s;
-    -ms-transition: all 1.5s;
-    -khtml-transition: all 1.5s;
-    transition: all 1.5s;
-    opacity: 0;
-    position: absolute;
-    width: 569px;
-    top: 36px;
-    left: 154px
-}
-
-#theWhole #theWhole-madeWith .page-content h2 {
+#kiangunyi #kiangunyi-madeWith .page-content h2 {
     font-family: 'Conv_Gotham-Book';
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -10543,37 +10467,41 @@ menu.openMenu {
     color: #fc1f2f
 }
 
-#theWhole #theWhole-madeWith .page-content ul {
-    margin-top: 40px
+#kiangunyi #kiangunyi-madeWith .page-content ul {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#theWhole #theWhole-madeWith .page-content ul li {
+#kiangunyi #kiangunyi-madeWith .page-content ul li {
     display: inline-block;
-    width: 25%;
+    width: 50%;
     text-align: center;
     vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 12px;
     font-size: .75rem;
     color: #646464
 }
 
-.lt-ie9 #theWhole #theWhole-madeWith .page-content ul li {
+.lt-ie9 #kiangunyi #kiangunyi-madeWith .page-content ul li {
     display: inline;
     zoom: 1
 }
 
-#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(1) {
+#kiangunyi #kiangunyi-madeWith .page-content ul li a:nth-of-type(1) {
     display: block;
     color: #f9f9f9;
     font-family: 'Conv_Gotham-Book';
     text-transform: uppercase
 }
 
-#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(1):hover {
+#kiangunyi #kiangunyi-madeWith .page-content ul li a:nth-of-type(1):hover {
     text-decoration: underline
 }
 
-#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2) {
+#kiangunyi #kiangunyi-madeWith .page-content ul li a:nth-of-type(2) {
     position: relative;
     display: block;
     background: #fc1f2f;
@@ -10587,7 +10515,7 @@ menu.openMenu {
     border-radius: 100%
 }
 
-#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2) svg {
+#kiangunyi #kiangunyi-madeWith .page-content ul li a:nth-of-type(2) svg {
     display: block;
     position: absolute;
     top: 50%;
@@ -10596,32 +10524,32 @@ menu.openMenu {
     margin-top: -7px
 }
 
-#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2) svg g path {
+#kiangunyi #kiangunyi-madeWith .page-content ul li a:nth-of-type(2) svg g path {
     fill: #f9f9f9
 }
 
-#theWhole #theWhole-madeWith .page-content ul li a:nth-of-type(2):hover svg g path {
+#kiangunyi #kiangunyi-madeWith .page-content ul li a:nth-of-type(2):hover svg g path {
     fill: #050505
 }
 
-#theWhole #theWhole-madeWith.active .page-content #macbook-theWhole img:nth-of-type(2) {
+#kiangunyi #kiangunyi-madeWith.active .page-content #macbook-kiangunyi img:nth-of-type(2) {
     opacity: 1
 }
 
-#theWhole footer {
+#kiangunyi footer {
     background: #050505;
     text-align: center;
     padding: 70px 0;
     display: block
 }
 
-#theWhole footer p:nth-of-type(1) {
+#kiangunyi footer p:nth-of-type(1) {
     color: #f9f9f9;
     font-size: 40px;
     font-size: 2.5rem
 }
 
-#theWhole footer p:nth-of-type(2) {
+#kiangunyi footer p:nth-of-type(2) {
     color: #646464;
     font-size: 18px;
     font-size: 1.125rem
