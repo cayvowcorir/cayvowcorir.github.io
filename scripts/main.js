@@ -122,7 +122,7 @@ app.Routers = app.Routers || {},
                     case "partech":
                         app.loadView(new app.Views.partech);
                         break;
-                    case "the-whole":
+                    case "kiangunyi":
                         app.loadView(new app.Views.kiangunyi);
                         break;
                     case "100ansdetour":
@@ -612,9 +612,9 @@ app.Views = app.Views || {},
         "use strict";
         app.Views.kiangunyi = Backbone.View.extend({
             caseStudyContainer: $(".case-study-container"),
-            caseStudyElem: $('section[data-case-study="the-whole"]'),
-            title: "The Whole",
-            name: "the-whole",
+            caseStudyElem: $('section[data-case-study="kiangunyi"]'),
+            title: "Kiangunyi",
+            name: "kiangunyi",
             anchorsPositions: [],
             anchorsName: "kiangunyi",
             initialize: function() {},
@@ -660,11 +660,5 @@ var s = skrollr.init({
         }
     }
 });
-jQuery(document).ready(function($){
-  $('#particles').particleground({
-    dotColor: '#5cbdaa',
-    lineColor: '#5cbdaa'
-  });
 
-});
 

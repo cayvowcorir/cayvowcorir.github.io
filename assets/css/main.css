@@ -2012,12 +2012,16 @@ menu.openMenu {
     margin-top: -6px
 }
 
-#home header #header-content #social li #dribbble svg {
+#home header #header-content #social li #facebook svg {
     margin-left: -8px;
     margin-top: -8px
 }
 
 #home header #header-content #social li #linkedin svg {
+    margin-left: -7px;
+    margin-top: -8px
+}
+#home header #header-content #social li #gplus svg {
     margin-left: -7px;
     margin-top: -8px
 }
