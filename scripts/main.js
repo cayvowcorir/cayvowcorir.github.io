@@ -116,8 +116,8 @@ app.Routers = app.Routers || {},
             },
             loadView: function(e) {
                 switch (e) {
-                    case "social-coke":
-                        app.loadView(new app.Views.socialCoke);
+                    case "zolani":
+                        app.loadView(new app.Views.zolani);
                         break;
                     case "partech":
                         app.loadView(new app.Views.partech);
@@ -541,11 +541,11 @@ app.Views = app.Views || {},
 app.Views = app.Views || {},
     function() {
         "use strict";
-        app.Views.socialCoke = Backbone.View.extend({
+        app.Views.zolani = Backbone.View.extend({
             caseStudyContainer: $(".case-study-container"),
-            caseStudyElem: $('section[data-case-study="social-coke"]'),
-            title: "Social Coke",
-            name: "social-coke",
+            caseStudyElem: $('section[data-case-study="zolani"]'),
+            title: "Zolani",
+            name: "Zolani",
             model: null,
             pseudoPositions: {},
             $pseudoSocialCoke: $("#pseudoSocialCoke"),
@@ -553,7 +553,7 @@ app.Views = app.Views || {},
             $socialCokeForm: $("#socialCokeForm"),
             $inputText: $("#socialCokeForm").find('input[type="text"]'),
             anchorsPositions: [],
-            anchorsName: "socialCoke",
+            anchorsName: "zolani",
             initialize: function() {
                 this.initEnterProjectAction()
             },
@@ -564,11 +564,11 @@ app.Views = app.Views || {},
                 })
             },
             refreshAnchors: function() {
-                this.anchorsPositions = [$("#socialCoke-introduction").offset().top - 1, $("#socialCoke-context").offset().top - 1, $("#socialCoke-idea").offset().top - 1, $("#socialCoke-interest").offset().top - 1, $("#socialCoke-universe").offset().top - 1, $("#socialCoke-bottle").offset().top - 1, $("#socialCoke-madeWith").offset().top - 1]
+                this.anchorsPositions = [$("#zolani-introduction").offset().top - 1, $("#zolani-concept").offset().top - 1, $("#socialCoke-idea").offset().top - 1, $("#socialCoke-interest").offset().top - 1, $("#socialCoke-universe").offset().top - 1, $("#socialCoke-bottle").offset().top - 1, $("#socialCoke-madeWith").offset().top - 1]
             },
             enterProjectAnim: function() {
                 var e = this;
-                $(".border").removeClass("close"), $(".border").addClass("open"), $("#transition-social-coke").css({
+                $(".border").removeClass("close"), $(".border").addClass("open"), $("#zolani").css({
                     display: "block"
                 }), app.homeView.disableTransition(), app.router.navigate("/" + this.name + "/case-study", {
                     trigger: !1

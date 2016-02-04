@@ -25,6 +25,7 @@ hr {
     padding: 0
 }
 
+
 h1,
 h2,
 h3,
@@ -73,38 +74,6 @@ td {
 a {
     text-decoration: none
 }
-
-/*@font-face {
-    font-family: 'mostra-nuova-bold';
-    src: url('font/mostra-nuova/mostra_nuova_bold-webfont.eot');
-    src: url('font/mostra-nuova/mostra_nuova_bold-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_bold-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_bold-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_bold-webfont.svg#mostra_nuovabold') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'mostra-nuova-light';
-    src: url('font/mostra-nuova/mostra_nuova_light-webfont.eot');
-    src: url('font/mostra-nuova/mostra_nuova_light-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_light-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_light-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_light-webfont.svg#mostra_nuovalight') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'mostra-nuova-regular';
-    src: url('font/mostra-nuova/mostra_nuova_regular-webfont.eot');
-    src: url('font/mostra-nuova/mostra_nuova_regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_regular-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_regular-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_regular-webfont.svg#mostra_nuova_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal
-}
-
-@font-face {
-    font-family: 'mostra-nuova-thin';
-    src: url('font/mostra-nuova/mostra_nuova_thin-webfont.eot');
-    src: url('font/mostra-nuova/mostra_nuova_thin-webfont.eot?#iefix') format('embedded-opentype'), url('font/mostra-nuova/mostra_nuova_thin-webfont.woff') format('woff'), url('font/mostra-nuova/mostra_nuova_thin-webfont.ttf') format('truetype'), url('font/mostra-nuova/mostra_nuova_thin-webfont.svg#mostra_nuovathin') format('svg');
-    font-weight: normal;
-    font-style: normal
-}*/
 
 
 
@@ -2568,7 +2537,9 @@ menu.openMenu {
     left: 0;
     bottom: 0;
     right: 0;
-    overflow: hidden
+    overflow: hidden;
+    background: #141414 url('../img/kiangunyi/main-bg.gif') no-repeat center;
+    background-color: black;
 }
 
 #kiangunyiProject #space-anim #rocket {
@@ -3077,7 +3048,7 @@ menu.openMenu {
 #kiangunyiProject #kiangunyiSolarSystem #kiangunyiPlanet {
     position: absolute;
     z-index: 99;
-    left: 50%;
+    left: 75%;
     top: 50%
 }
 
@@ -9867,7 +9838,7 @@ menu.openMenu {
     left: 0;
     bottom: 0;
     right: 0;
-    background: #141414 url('../img/the-whole/the-whole-bg.jpg') no-repeat center;
+    background: #141414 url('../img/kiangunyi/kiangunyi-bg.jpeg') no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
