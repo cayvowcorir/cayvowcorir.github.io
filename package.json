@@ -1,0 +1,41 @@
+{
+  "name": "kevin-korir",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cayvowcorir/cayvowcorir.github.io.git"
+  },
+  "keywords": [
+    "kevin",
+    "korir",
+    "website",
+    "angular",
+    "programming",
+    "web",
+    "website",
+    "development",
+    "webpage",
+    "javascript",
+    "html",
+    "css",
+    "web",
+    "design",
+    "ui",
+    "ux",
+    "job"
+  ],
+  "author": "Kevin Korir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cayvowcorir/cayvowcorir.github.io/issues"
+  },
+  "homepage": "https://github.com/cayvowcorir/cayvowcorir.github.io#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
