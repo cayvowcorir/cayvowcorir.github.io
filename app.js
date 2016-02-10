@@ -15,5 +15,8 @@ app.listen(8081, function() {
 app.use("/public",express.static('/public'));
 
 app.use('/', express.static(__dirname + '/'));
+app.use(function(req, res){
+   res.sendFile(__dirname + '/index.html');
+});
 
 
