@@ -125,8 +125,8 @@ app.Routers = app.Routers || {},
                     case "kiangunyi":
                         app.loadView(new app.Views.kiangunyi);
                         break;
-                    case "100ansdetour":
-                        app.loadView(new app.Views._100ansDeTour);
+                    case "pepeza":
+                        app.loadView(new app.Views._pepeza);
                         break;
                     default:
                         app.loadView(null)
@@ -323,11 +323,11 @@ app.Views = app.Views || {},
 app.Views = app.Views || {},
     function() {
         "use strict";
-        app.Views._100ansDeTour = Backbone.View.extend({
+        app.Views._pepeza = Backbone.View.extend({
             caseStudyContainer: $(".case-study-container"),
-            caseStudyElem: $('section[data-case-study="100ansdetour"]'),
+            caseStudyElem: $('section[data-case-study="pepeza"]'),
             title: "100ans de Tour",
-            name: "100ansdetour",
+            name: "pepeza",
             mousePositionX: 0,
             anchorsPositions: [],
             anchorsName: "tdf",
@@ -368,9 +368,7 @@ app.Views = app.Views || {},
                         })
                     }), $(document).on("mouseup", function() {
                         if (e.velo.removeClass("no-transition"), e.dragCursor.removeClass("no-transition"), r = parseInt(e.dragCursor.css("margin-left").split("px")[0]), $(document).unbind("mouseup"), $(document).unbind("mousemove"), r > n - t - 50) return app.homeView.disableSlider(), e.dragCursor.css("margin-left", n - t + "px"), e.velo.css("margin-left", n - t + "px"), $(".border").toggleClass("close open"), $("#borderTop").on("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd transitionend", function() {
-                            $(this).unbind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd transitionend"), app.router.navigate("/" + e.name + "/case-study", {
-                                trigger: !1
-                            }), e.enterProjectAnim()
+                            $(this).unbind("webkitTransitionEnd mozTransitionEnd msTransitionEnd oTransitionEnd transitionend"), window.location.assign("/pepeza/case-study-pepeza"), e.enterProjectAnim()
                         }), !1;
                         e.dragCursor.css("margin-left", "0px"), e.velo.css("margin-left", "0px");
                         for (var i = $("#tdfDragCursor").css("margin-left").replace("px", ""); i > 0;) $("#fixie-wheel1").css({
